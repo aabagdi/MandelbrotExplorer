@@ -50,26 +50,9 @@ struct MandelbrotView: View {
         )
         .toolbar {
           ToolbarItem(placement: .topBarTrailing) {
-            Button {
-              showColorPicker.toggle()
-            } label: {
-              HStack {
-                Circle()
-                  .fill(baseColor)
-                  .frame(width: 20, height: 20)
-                Image(systemName: "chevron.down")
-                  .foregroundColor(.primary)
-              }
-            }
+            ColorPicker("", selection: $baseColor, supportsOpacity: false)
           }
         }
-        .navigationTitle("MandelbrotExplorer")
-        .navigationBarTitleDisplayMode(.inline)
-    }
-    .sheet(isPresented: $showColorPicker) {
-      ColorPicker("Choose Base Color", selection: $baseColor)
-        .padding()
-        .presentationDetents([.height(150)])
     }
   }
 }

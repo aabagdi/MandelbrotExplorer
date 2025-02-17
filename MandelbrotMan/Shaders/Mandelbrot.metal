@@ -10,7 +10,7 @@ using namespace metal;
 
 [[ stitchable ]] half4 mandelbrot(float2 position, half4 color, float2 size, float2 offset, float scale, float3 baseColor) {
   float aspectRatio = size.x / size.y;
-  
+
   float2 normalizedPos;
   if (aspectRatio > 1.0) {
     normalizedPos = float2(
@@ -30,7 +30,8 @@ using namespace metal;
                     );
   
   float2 z = float2(0.0, 0.0);
-  const int maxIter = 100;
+  
+  int maxIter = int(min(100 + log2(scale) * 25.0, 1000.0));
   int iter = 0;
   
   float final_x = 0.0;
@@ -43,6 +44,10 @@ using namespace metal;
     if (x * x + y * y > 4.0) {
       final_x = x;
       final_y = y;
+      break;
+    }
+    
+    if (isinf(x) || isinf(y)) {
       break;
     }
     
