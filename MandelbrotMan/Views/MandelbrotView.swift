@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct MandelbrotView: View {
   @State private var offset = CGSize.zero
   @State private var lastOffset = CGSize.zero
