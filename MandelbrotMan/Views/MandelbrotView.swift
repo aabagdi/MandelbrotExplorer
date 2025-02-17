@@ -15,7 +15,6 @@ struct MandelbrotView: View {
   @State private var scale: CGFloat = 1.0
   @State private var lastScale: CGFloat = 1.0
   @State private var baseColor = Color(.sRGB, red: 1, green: 1, blue: 1)
-  @State private var showColorPicker = false
   
   var body: some View {
     NavigationStack {
