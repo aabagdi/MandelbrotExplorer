@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		39BEE42A2CA4BBA40094BD48 /* MandelbrotExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MandelbrotExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BEE42A2CA4BBA40094BD48 /* MandelbrotMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MandelbrotMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		39BEE42B2CA4BBA40094BD48 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				39BEE42A2CA4BBA40094BD48 /* MandelbrotExplorer.app */,
+				39BEE42A2CA4BBA40094BD48 /* MandelbrotMan.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		39BEE4292CA4BBA40094BD48 /* MandelbrotExplorer */ = {
+		39BEE4292CA4BBA40094BD48 /* MandelbrotMan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 39BEE4382CA4BBA60094BD48 /* Build configuration list for PBXNativeTarget "MandelbrotExplorer" */;
+			buildConfigurationList = 39BEE4382CA4BBA60094BD48 /* Build configuration list for PBXNativeTarget "MandelbrotMan" */;
 			buildPhases = (
 				39BEE4262CA4BBA40094BD48 /* Sources */,
 				39BEE4272CA4BBA40094BD48 /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				39BEE42C2CA4BBA40094BD48 /* MandelbrotExplorer */,
 			);
-			name = MandelbrotExplorer;
+			name = MandelbrotMan;
 			packageProductDependencies = (
 			);
 			productName = "Mandelbrot Explorer";
-			productReference = 39BEE42A2CA4BBA40094BD48 /* MandelbrotExplorer.app */;
+			productReference = 39BEE42A2CA4BBA40094BD48 /* MandelbrotMan.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BEE4252CA4BBA40094BD48 /* Build configuration list for PBXProject "MandelbrotExplorer" */;
+			buildConfigurationList = 39BEE4252CA4BBA40094BD48 /* Build configuration list for PBXProject "MandelbrotMan" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				39BEE4292CA4BBA40094BD48 /* MandelbrotExplorer */,
+				39BEE4292CA4BBA40094BD48 /* MandelbrotMan */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +260,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +290,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +307,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BEE4252CA4BBA40094BD48 /* Build configuration list for PBXProject "MandelbrotExplorer" */ = {
+		39BEE4252CA4BBA40094BD48 /* Build configuration list for PBXProject "MandelbrotMan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BEE4362CA4BBA60094BD48 /* Debug */,
@@ -314,7 +316,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		39BEE4382CA4BBA60094BD48 /* Build configuration list for PBXNativeTarget "MandelbrotExplorer" */ = {
+		39BEE4382CA4BBA60094BD48 /* Build configuration list for PBXNativeTarget "MandelbrotMan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BEE4392CA4BBA60094BD48 /* Debug */,
