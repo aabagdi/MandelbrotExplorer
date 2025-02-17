@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MandelbrotExplorerApp: App {
+struct MandelbrotManApp: App {
   var body: some Scene {
     WindowGroup {
       MandelbrotView()
