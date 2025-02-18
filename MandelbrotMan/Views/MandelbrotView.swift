@@ -52,7 +52,6 @@ struct MandelbrotView: View {
             }
             .onEnded { value in
               lastScale = scale
-              print(scale)
             }
         )
         .toolbar {
