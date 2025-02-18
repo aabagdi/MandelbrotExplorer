@@ -26,7 +26,8 @@ struct MandelbrotView: View {
         .gesture(
           DragGesture(minimumDistance: 0)
             .onChanged { value in
-              let translationScale = 1.0 / (scale * 2)
+              let multiplier: CGFloat = 2
+              let translationScale = multiplier / (scale * 2)
               offset = CGSize(
                 width: lastOffset.width - value.translation.width * translationScale,
                 height: lastOffset.height - value.translation.height * translationScale
@@ -39,10 +40,19 @@ struct MandelbrotView: View {
         .gesture(
           MagnificationGesture()
             .onChanged { value in
-              scale = lastScale * value
+              let newScale = lastScale * value
+              switch newScale {
+              case ..<1:
+                scale = 1
+              case 100000...:
+                scale = 100000
+              default:
+                scale = newScale
+              }
             }
             .onEnded { value in
               lastScale = scale
+              print(scale)
             }
         )
         .toolbar {
