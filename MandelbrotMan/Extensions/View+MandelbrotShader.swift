@@ -1,5 +1,5 @@
 //
-//  View+MandelbrotEffect.swift
+//  View+MandelbrotShader.swift
 //  Mandelbrot Explorer
 //
 //  Created by Aadit Bagdi on 2/16/25.

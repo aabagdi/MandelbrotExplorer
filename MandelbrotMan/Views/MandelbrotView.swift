@@ -12,11 +12,11 @@ struct MandelbrotView: View {
   @State private var lastOffset = CGSize.zero
   @State private var scale: CGFloat = 1.0
   @State private var lastScale: CGFloat = 1.0
-  @State private var baseColor = Color(.sRGB, red: 1, green: 1, blue: 1)
+  @State private var baseColor = Color(.sRGB, red: 76/255, green: 180/255, blue: 255/255)
   
   var body: some View {
     NavigationStack {
-      Color.white
+      baseColor
         .ignoresSafeArea()
         .mandelbrotShader(
           offset: offset,

@@ -59,11 +59,13 @@ using namespace metal;
   } else {
     float smoothColor = float(iter) + 1.0 - log2(log2(final_x * final_x + final_y * final_y));
     smoothColor = smoothColor / float(maxIter);
+
+    float intensity = (sin(smoothColor * 6.28) * 0.5 + 0.5);
     
     return half4(
-                 half(baseColor.x * (sin(smoothColor * 6.28) * 0.5 + 0.5)),
-                 half(baseColor.y * (sin(smoothColor * 6.28 + 2.09) * 0.5 + 0.5)),
-                 half(baseColor.z * (sin(smoothColor * 6.28 + 4.18) * 0.5 + 0.5)),
+                 half(baseColor.x * intensity),
+                 half(baseColor.y * intensity),
+                 half(baseColor.z * intensity),
                  1.0
                  );
   }
